@@ -1,10 +1,10 @@
-/.idea/*
-/[Ll]ibrary/*
-/[Ll]ogs/*
-/[Oo]bj/*
-/[Tt]emp/*
-/[Bb]ins
-/[Uu]serSettings/
+*/.idea/*
+*/[Ll]ibrary/*
+*/[Ll]ogs/*
+*/[Oo]bj/*
+*/[Tt]emp/*
+*/[Bb]ins
+*/[Uu]serSettings/
 *.csproj
 *.sln
 *.apk
