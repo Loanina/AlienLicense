@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 7399221045968028188}
   - component: {fileID: 8263883118148728952}
   - component: {fileID: 8070283057377110756}
+  - component: {fileID: 3452952735872027722}
   m_Layer: 0
   m_Name: ColorfullMap
   m_TagString: Untagged
@@ -308,6 +309,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 3
+--- !u!114 &3452952735872027722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5610740994480256176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a46185c4cde1a8419693f48fb3a39e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  root: {fileID: 7399221045968028188}
+  gridLayoutGroup: {fileID: 0}
+  container: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1 &6184742261837765771
 GameObject:
   m_ObjectHideFlags: 0

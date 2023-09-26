@@ -783,6 +783,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 827493140}
+  - {fileID: 820651853}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -798,6 +799,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73ee3c0c1cf77ef468aa7d3256c83b35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  installers:
+  - {fileID: 820651854}
+  - {fileID: 827493141}
 --- !u!1 &820272615
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,6 +868,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820272615}
   m_CullTransparentMesh: 1
+--- !u!1 &820651852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 820651853}
+  - component: {fileID: 820651854}
+  m_Layer: 0
+  m_Name: installerView
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &820651853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820651852}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 788009790}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &820651854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820651852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8925eb750fa9cf47b60cae57df7b757, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  map: {fileID: 0}
+  furniture: {fileID: 0}
 --- !u!1 &827493139
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,6 +923,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 827493140}
+  - component: {fileID: 827493141}
   m_Layer: 0
   m_Name: InstallerProjectSettings
   m_TagString: Untagged
@@ -895,6 +946,20 @@ Transform:
   m_Father: {fileID: 788009790}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &827493141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827493139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91bae732c54a6a842875872d8ebeecd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  configProjectSettings:
+    TargetFps: 60
 --- !u!1 &1049673302
 GameObject:
   m_ObjectHideFlags: 0

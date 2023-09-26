@@ -13,7 +13,7 @@ namespace App.Scripts.Libs.Installer
 
         public override void InstallBindings(ServiceContainer serviceContainer)
         {
-            throw new NotImplementedException();
+            serviceContainer.SetServiceSelf(map);
         }
     }
 }

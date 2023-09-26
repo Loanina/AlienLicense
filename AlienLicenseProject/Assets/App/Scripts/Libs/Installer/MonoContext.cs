@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using App.Scripts.Libs.ServiceLocator;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace App.Scripts.Libs.Installer
 {
     public class MonoContext : MonoBehaviour
     {
-        public List<MonoInstaller> installers = new();
+        [SerializeField] private List<MonoInstaller> installers;
 
         private readonly List<IInitializable> _initializables = new();
         private readonly List<IUpdatable> _updatables = new();
