@@ -2,14 +2,14 @@ using App.Scripts.Libs.BaseView;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace App.Scripts.Feature.FurnitureModels.View.ViewGridFurniture
+namespace App.Scripts.Feature.FurnitureModels.View.ViewFurniture
 {
-    public class ViewGridFurniture : MonoViewUI
+    public class ViewFurniture : MonoViewUI
     {
         [SerializeField] private GridLayoutGroup gridLayoutGroup;
         [SerializeField] private RectTransform container;
             
-        [SerializeField] private AnimatorGridFurniture animator;
+        [SerializeField] private AnimatorFurniture animator;
         
         
     }
