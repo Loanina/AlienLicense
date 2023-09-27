@@ -1,6 +1,6 @@
 using System;
-using App.Scripts.Feature.FurnitureModels.View.ViewFurniture;
-using App.Scripts.Feature.FurnitureModels.View.ViewMap;
+using App.Scripts.Feature.Models.View.ViewFurniture;
+using App.Scripts.Feature.Models.View.ViewMap;
 using App.Scripts.Libs.ServiceLocator;
 using UnityEngine;
 

@@ -476,6 +476,54 @@ RectTransform:
   m_AnchoredPosition: {x: 326.86, y: 0}
   m_SizeDelta: {x: -706.57, y: 139.12}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &406635104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 406635105}
+  - component: {fileID: 406635106}
+  m_Layer: 0
+  m_Name: installerServices
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &406635105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406635104}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 788009790}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &406635106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406635104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0543019e1aaa9b9469b2d1f0ad5ed877, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  configLevelSelection:
+    InitLevelIndex: 1
+    Levels:
+    - {fileID: 3452952735872027722, guid: 812affefb33e56045810e82826fe9c00, type: 3}
 --- !u!1 &508649111
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,6 +832,7 @@ Transform:
   m_Children:
   - {fileID: 827493140}
   - {fileID: 820651853}
+  - {fileID: 406635105}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -802,6 +851,7 @@ MonoBehaviour:
   installers:
   - {fileID: 820651854}
   - {fileID: 827493141}
+  - {fileID: 406635106}
 --- !u!1 &820272615
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,7 +962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8925eb750fa9cf47b60cae57df7b757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  map: {fileID: 0}
+  map: {fileID: 3452952735872027722, guid: 812affefb33e56045810e82826fe9c00, type: 3}
   furniture: {fileID: 0}
 --- !u!1 &827493139
 GameObject:
@@ -925,7 +975,7 @@ GameObject:
   - component: {fileID: 827493140}
   - component: {fileID: 827493141}
   m_Layer: 0
-  m_Name: InstallerProjectSettings
+  m_Name: installerProjectSettings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

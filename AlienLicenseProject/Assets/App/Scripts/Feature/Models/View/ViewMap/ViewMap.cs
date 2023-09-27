@@ -1,7 +1,7 @@
 using App.Scripts.Libs.BaseView;
 using UnityEngine;
 
-namespace App.Scripts.Feature.FurnitureModels.View.ViewMap
+namespace App.Scripts.Feature.Models.View.ViewMap
 {
     public class ViewMap : MonoViewUI
     {

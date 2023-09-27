@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 8070283057377110756}
   - component: {fileID: 3452952735872027722}
   m_Layer: 0
-  m_Name: ColorfullMap
+  m_Name: ColorfullMap_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

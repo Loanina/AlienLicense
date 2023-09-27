@@ -1,8 +1,7 @@
 using App.Scripts.Libs.BaseView;
 using UnityEngine;
-using UnityEngine.UI;
 
-namespace App.Scripts.Feature.FurnitureModels.View.ViewFurniture
+namespace App.Scripts.Feature.Models.View.ViewFurniture
 {
     public class ViewFurniture : MonoViewUI
     {
