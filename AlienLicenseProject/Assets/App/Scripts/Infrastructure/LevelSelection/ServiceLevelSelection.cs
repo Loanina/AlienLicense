@@ -1,4 +1,5 @@
 using System;
+using App.Scripts.Feature.Models.View.ViewMap;
 
 namespace App.Scripts.Infrastructure.LevelSelection
 {
@@ -7,6 +8,7 @@ namespace App.Scripts.Infrastructure.LevelSelection
         private readonly ConfigLevelSelection _configLevelSelection;
 
         private int _currentLevelIndex;
+        private ViewMap _currentLevel;
 
         public ServiceLevelSelection(ConfigLevelSelection configLevelSelection)
         {
@@ -21,6 +23,15 @@ namespace App.Scripts.Infrastructure.LevelSelection
             {
                 _currentLevelIndex = value;
                 OnSelectedLevelChanged?.Invoke();
+            }
+        }
+
+        public ViewMap CurrentLevel
+        {
+            get => _currentLevel;
+            private set
+            {
+                _currentLevel = value;
             }
         }
 
@@ -41,6 +52,7 @@ namespace App.Scripts.Infrastructure.LevelSelection
             }
 
             CurrentLevelIndex = levelIndex;
+            CurrentLevel = _configLevelSelection.Levels[levelIndex - 1];
         }
     }
 }

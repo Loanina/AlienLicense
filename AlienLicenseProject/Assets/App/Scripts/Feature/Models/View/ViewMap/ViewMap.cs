@@ -9,5 +9,7 @@ namespace App.Scripts.Feature.Models.View.ViewMap
         {
             RectTransform.sizeDelta = itemSize;
         }
+        
+        
     }
 }
