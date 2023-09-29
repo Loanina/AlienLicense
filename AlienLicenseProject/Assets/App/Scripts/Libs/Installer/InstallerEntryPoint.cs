@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using App.Scripts.Feature.Models;
 using App.Scripts.Feature.Models.View.ViewMap;
+using App.Scripts.Feature.Models.View.ViewMapContainer;
 using App.Scripts.Infrastructure.GameCore.Commands.SwitchLevel;
 using App.Scripts.Infrastructure.GameCore.Controllers;
 using App.Scripts.Infrastructure.GameCore.Systems;
@@ -48,7 +49,8 @@ namespace App.Scripts.Libs.Installer
                 new HandlerSetup(
                     container.Get<IServiceLevelSelection>(),
                     container.Get<ContainerMap>()),
-                new HandlerSetupShowLevel(container.Get<ContainerMap>(), container.Get<ViewLevelHeader>())
+                new HandlerSetupShowLevel(container.Get<ContainerMap>(), container.Get<ViewLevelHeader>(),
+                    container.Get<ViewMapContainer>())
             };
 
             var handlerStateSetup = new HandlerSetupLevelContainer(handlers);

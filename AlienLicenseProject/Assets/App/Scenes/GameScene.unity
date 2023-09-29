@@ -727,8 +727,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 304059585}
-  - {fileID: 820272616}
   - {fileID: 1049673303}
+  - {fileID: 820272616}
   m_Father: {fileID: 143970955}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -930,10 +930,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 820272615}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a46185c4cde1a8419693f48fb3a39e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 0aa048bd8e638ba4c9a8cf125e2e4e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   root: {fileID: 820272616}
+  container: {fileID: 820272616}
 --- !u!1 &820651852
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,8 +979,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8925eb750fa9cf47b60cae57df7b757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  map: {fileID: 820272620}
   viewLevelHeader: {fileID: 1522017390}
+  viewMapContainer: {fileID: 820272620}
 --- !u!1 &827493139
 GameObject:
   m_ObjectHideFlags: 0

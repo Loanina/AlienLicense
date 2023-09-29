@@ -1,4 +1,5 @@
 using App.Scripts.Libs.BaseView;
+using App.Scripts.Libs.Factory;
 using UnityEngine;
 
 namespace App.Scripts.Feature.Models.View.ViewMap
@@ -9,7 +10,5 @@ namespace App.Scripts.Feature.Models.View.ViewMap
         {
             RectTransform.sizeDelta = itemSize;
         }
-        
-        
     }
 }
