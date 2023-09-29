@@ -1,6 +1,5 @@
 using System.Threading.Tasks;
 using App.Scripts.Feature.Models;
-using App.Scripts.Feature.Models.View.ViewMap;
 using App.Scripts.Infrastructure.LevelSelection;
 using UnityEngine;
 

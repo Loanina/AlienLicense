@@ -8,7 +8,8 @@ namespace App.Scripts.Infrastructure.LevelSelection
         private readonly ConfigLevelSelection _configLevelSelection;
 
         private int _currentLevelIndex;
-        private ViewMap _currentLevel;
+        
+        public ViewMap CurrentLevel => _configLevelSelection.Levels[_currentLevelIndex-1];
 
         public ServiceLevelSelection(ConfigLevelSelection configLevelSelection)
         {
@@ -26,14 +27,7 @@ namespace App.Scripts.Infrastructure.LevelSelection
             }
         }
 
-        public ViewMap CurrentLevel
-        {
-            get => _currentLevel;
-            private set
-            {
-                _currentLevel = value;
-            }
-        }
+        
 
         public event Action OnSelectedLevelChanged;
 
@@ -52,7 +46,7 @@ namespace App.Scripts.Infrastructure.LevelSelection
             }
 
             CurrentLevelIndex = levelIndex;
-            CurrentLevel = _configLevelSelection.Levels[levelIndex - 1];
+            
         }
     }
 }
