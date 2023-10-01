@@ -1,3 +1,4 @@
+using App.Scripts.Feature.Inputs;
 using App.Scripts.Feature.Models;
 using App.Scripts.Infrastructure.LevelSelection;
 using App.Scripts.Libs.ServiceLocator;
@@ -13,7 +14,8 @@ namespace App.Scripts.Libs.Installer
         {
             container.SetService<IServiceLevelSelection, ServiceLevelSelection>(
                 new ServiceLevelSelection(configLevelSelection));
-
+            
+            container.SetServiceSelf(new ContainerSwitchInput());
             container.SetServiceSelf(new ContainerMap());
         }
     }

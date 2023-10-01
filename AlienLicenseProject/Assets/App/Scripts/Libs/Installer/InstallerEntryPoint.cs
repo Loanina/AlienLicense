@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using App.Scripts.Feature.Inputs;
 using App.Scripts.Feature.Models;
 using App.Scripts.Feature.Models.View.ViewMap;
 using App.Scripts.Feature.Models.View.ViewMapContainer;
@@ -12,6 +13,7 @@ using App.Scripts.Libs.StateMachine;
 using App.Scripts.Libs.StateMachine.States;
 using App.Scripts.Libs.StateMachine.States.SetupState;
 using App.Scripts.Libs.Systems;
+using App.Scripts.Libs.Systems.UserInput;
 
 namespace App.Scripts.Libs.Installer
 {
@@ -65,6 +67,8 @@ namespace App.Scripts.Libs.Installer
             var systems = new SystemsGroup();
             systems.AddSystems(container.GetServices<ISystem>());
 
+            systems.AddSystem(new SystemUserInput(container.Get<ContainerSwitchInput>()));
+            
             var commandSwitchLevel = new CommandSwitchLevelState<StateRestart>(
                 container.Get<IServiceLevelSelection>(),
                 gameStateMachine);
